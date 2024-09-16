@@ -9,3 +9,11 @@ cp .env.example .env
 npm install
 npm start
 ```
+
+## Run with Docker
+
+```bash
+docker build -t nodejs-wait-app .
+docker run nodejs-wait-app
+docker run -e "WAIT_MS=5000" nodejs-wait-app
+```
